@@ -18,8 +18,16 @@ public class Image {
 		driver.findElement(By.xpath("//label[contains(text(),'home')]/following-sibling::img")).click();
 		
 		driver.navigate().back();
+
+		driver.findElement(By.xpath("//label[contains(text(),'Broken')]/following-sibling::img")).click();
+		String title = driver.getTitle();
+		String pageTitle="TestLeaf - Interact with Images";
 		
-//		driver.findElement(By.xpath(null))
+		if(title.equals(pageTitle)) {
+			System.out.println("the image is broken");
+		}
+		
+			driver.switchTo().activeElement().findElement(By.xpath("//label[contains(text(),'Keyboard')]/following-sibling::img")).click();
 	}
 
 }
