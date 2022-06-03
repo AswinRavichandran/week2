@@ -12,20 +12,20 @@ public class Button {
 		driver.get("http://www.leafground.com/pages/Button.html");
 		driver.manage().window().maximize();
 		
-//		//To go home page
-//		driver.findElement(By.xpath("//button[@id='home']")).click();
-//		
-//		//To navigate back
-//		driver.navigate().back();
-//		
-//		//To find location of button
-//		System.out.println(driver.findElement(By.xpath("(//button[@id='home']//following::button)[1]")).getLocation());
-//		
-//		//To find color of button
-//		System.out.println(driver.findElement(By.xpath("(//button[@id='home']//following::button)[2]")).getCssValue("background-color"));
-//		
-//		//To find size of button
-//		System.out.println(driver.findElement(By.xpath("(//button[@id='home']//following::button)[3]")).getSize());
+		//To go home page
+		driver.findElement(By.xpath("//button[@id='home']")).click();
+		
+		//To navigate back
+		driver.navigate().back();
+		
+		//To find location of button
+		System.out.println(driver.findElement(By.xpath("(//button[@id='home']//following::button)[1]")).getLocation());
+		
+		//To find color of button
+		System.out.println(driver.findElement(By.xpath("(//button[@id='home']//following::button)[2]")).getCssValue("background-color"));
+		
+		//To find size of button
+		System.out.println(driver.findElement(By.xpath("(//button[@id='home']//following::button)[3]")).getSize());
 //		
 		driver.close();
 	}
